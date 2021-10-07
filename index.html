@@ -5,6 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Backtracking</title>
+    <!-- <style>
+        body{
+            background-color: rgb(6, 124, 124);
+        }
+        label{
+           font-size: 20px;
+        }
+    </style> -->
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>Backtracking</h1>
@@ -17,14 +26,14 @@
 <p>
 Suppose you get to a bad leaf. You can backtrack to continue the search for a good leaf by revoking your most recent choice, and trying out the next option in that set of options. If you run out of options, revoke the choice that got you here, and try another choice at that node. If you end up at the root with no options left, there are no good leaves to be found.
     </p>
-    <img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif" alt="">
+   <center> <img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif" alt=""></center>
     <hr>
 <ol>
     <li>Starting at Root, your options are A and B. You choose A.</li>
     <li>At A, your options are C and D. You choose C.</li>
     <li>At A, you have already tried C, and it failed. Try D.</li>
 </ol>
-<table border="2px">
+<table border="2px" align="center">
     <thead>
         <tr>
             <th></th>
@@ -56,9 +65,9 @@ Suppose you get to a bad leaf. You can backtrack to continue the search for a go
 </table>
 <br>
 <!-- <center> -->
-<table border="1px">
+<table border="1px" align="center">
     <thead>
-        <tr align="center">
+        <tr>
             <th rowspan="2">Heading1</th>
             <th>Heading2</th>
             <th rowspan="2">Heading3</th>
@@ -89,10 +98,31 @@ Suppose you get to a bad leaf. You can backtrack to continue the search for a go
           int sum = a+b;
       }
   </pre>
-    <a href="https://www.prepbytes.com/">Go to prepbytes</a>
+    <!-- <a href="https://www.prepbytes.com/">Go to prepbytes</a>
     <a href="author.html">About the Author</a>
-<br>
+<br> -->
 
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ul_EM2xL_i4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <!-- <iframe width="560" height="315" src="https://www.youtube.com/embed/Ul_EM2xL_i4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe> -->
+ <hr>
+    <form>
+        <fieldset>
+             <legend>Login Form</legend>
+            <label id="usernamelabel">User Name</label>
+            <br>
+            <input type="text" id="username">
+            <br>
+            <label>Password</label>
+            <br>
+            <input type="text" value="Bydefault password" id="username" style="color: red;">
+
+            <br>
+            <label>Are you sure</label>
+            <input type="checkbox">
+            <br>
+            <input type="button"value= "submit">
+        </fieldset>
+  </form>
+
+  
 </body>
 </html>
