@@ -3,6 +3,7 @@ body{
 }
 label{
     font-size: 21px;
+    color: green !important;
 }
 p{
     font-size: 15px;
