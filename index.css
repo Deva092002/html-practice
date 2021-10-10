@@ -3,8 +3,15 @@ body{
 }
 label{
     font-size: 21px;
-    color: green !important;
+    color: green ;
 }
 p{
     font-size: 15px;
+}
+#password2{
+ color: indigo;
+ font-size: 19px ;
+}
+.sure{
+    color: blue;
 }
