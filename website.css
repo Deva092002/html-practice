@@ -1,0 +1,45 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    color:  white;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: bold;
+}
+.bg{
+    position: absolute;
+    background: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
+    height: 450px;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.3;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#headerID{
+    text-align: center;
+}
+#headerID h1{
+  padding-top: 77px;
+}
+.btn{
+    border: 2px solid white;
+    background-color: grey;
+    color: black;
+    padding: 12px;
+    cursor: pointer;
+    border-radius: 16px;
+}
+#headerID p{
+    color: seagreen;
+    padding-bottom: 31px;
+}
+a:hover{
+    background-color: black;
+    color: white;
+    border-radius: 19px;
+}

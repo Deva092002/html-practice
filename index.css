@@ -4,6 +4,9 @@ body{
 h1{
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
+    border: 2px solid rgb(0 0 0);
+    /* padding: 19px; */
+    /* font-size: -webkit-xxx-large; */
 }
 p{
     font-size: 15px;
@@ -78,4 +81,13 @@ img{
     border-radius: 9px;
     background-image: linear-gradient(
 45deg, rgb(0 0 0), rgb(0 0 0 / 0%));
+}
+h2{
+    text-align: center;
+}
+img{
+    border: 2px solid red;
+    padding: 30px;
+    background-color: grey;
+    margin-left: 38%;
 }
