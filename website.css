@@ -9,6 +9,19 @@ body{
     line-height: 1.5;
     font-weight: bold;
 }
+h2{
+    margin: 0;
+    padding: 1em;
+}
+p{
+    margin: 0;
+    padding: 1em;
+}
+img{
+    display: block;
+    width: 100%;
+    height: auto;
+}
 .bg{
     position: absolute;
     background: url("https://static.pexels.com/photos/248515/pexels-photo-248515.png");
@@ -22,9 +35,14 @@ body{
 }
 #headerID{
     text-align: center;
+    min-height: 450px;
 }
 #headerID h1{
   padding-top: 77px;
+}
+#headerID p{
+    color: seagreen;
+    padding-bottom: 31px;
 }
 .btn{
     border: 2px solid white;
@@ -34,12 +52,37 @@ body{
     cursor: pointer;
     border-radius: 16px;
 }
-#headerID p{
-    color: seagreen;
-    padding-bottom: 31px;
-}
 a:hover{
     background-color: black;
     color: white;
     border-radius: 19px;
+}
+
+#section-a{
+    background: #eaeaea;
+    color: #333;
+    padding: 2em;
+}
+#section-b{
+    display: grid;
+    padding: 2em;
+}
+
+#section-b ul{
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+#section-b li{
+    background-color: #ffff;
+    color: #333;
+    width: 30%;
+    margin-bottom: 1em;
+}
+#section-c{
+    background: #eaeaea;
+    color: #333;
+    padding: 2em;
 }
