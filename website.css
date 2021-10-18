@@ -82,7 +82,27 @@ a:hover{
     margin-bottom: 1em;
 }
 #section-c{
-    background: #eaeaea;
+    background-color: #eaeaea;
     color: #333;
+    padding: 3em;
+}
+#section-d{
+    display: flex;
+}
+#section-d .box{
+    padding: 1em;
+}
+#section-d .box:first-child{
+ background-color: skyblue;
+}
+
+#footer{
+    background-color: black;
+    color: white;
+    display: flex;
     padding: 2em;
+}
+
+#footer div:last-child{
+    margin-left: auto;
 }
