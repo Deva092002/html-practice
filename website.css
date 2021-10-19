@@ -51,6 +51,7 @@ img{
     padding: 12px;
     cursor: pointer;
     border-radius: 16px;
+    text-decoration: none;
 }
 a:hover{
     background-color: black;
@@ -105,4 +106,38 @@ a:hover{
 
 #footer div:last-child{
     margin-left: auto;
+}
+
+@media only screen and (max-width:600px){
+    #section-b ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: block;
+        justify-content: space-around;
+    }
+    #section-b li{
+        background-color: #ffff;
+        color: #333;
+        width: 100%;
+        margin-bottom: 1em;
+    }
+    #section-d{
+        display: block;
+    }
+    #footer{
+        background-color: black;
+        color: white;
+        display: block;
+        padding: 2em;
+    }
+    #footer div:last-child{
+        margin-top: 2em;
+    }
+    .bg{
+        height: 490px;
+    }
+    #headerID{
+        min-height: 490px;
+    }
 }
