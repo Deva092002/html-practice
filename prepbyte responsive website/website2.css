@@ -138,6 +138,9 @@ img{
   align-items: center;
   font-size: 20px;
 }
+
+/* picture  */
+
 .picture h2:before, .picture h2:after{
   display: block;
   content: '';
@@ -162,6 +165,9 @@ img{
   grid-gap: 20px;
   grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
+
+  /* Footer */
+
 footer{
   background-color: black;
   color: white;
@@ -178,13 +184,6 @@ footer{
   .about {
     grid-template-columns: 1fr;
   }
-  .menu ul {
-    max-height: 0;
-    overflow: hidden;
-    transform: rotateX(
-90deg);
-    transition: all 0.5s;
-}
 }
 .icon img{
  height: 100px;
