@@ -69,3 +69,37 @@ img{
     background-color: grey;
     margin-left: 38%;
 }
+.H1{
+    color: rgb(255 255 255);
+    background-color: rgb(148 152 239);
+    border: 2px solid rgb(30 21 21);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 5px;
+}
+.H1:hover{
+    color: black;
+    background-color: gray;
+    border: 2px solid rgb(30 21 21);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.H2{
+    color: rgb(255 255 255);
+    background-color: rgb(148 152 239);
+    border: 2px solid rgb(30 21 21);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 5px;
+    width: 110px;
+}
+.Link{
+    color: rgb(255 255 255);
+    background-color: rgb(148 152 239);
+    border: 2px solid rgb(30 21 21);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 5px;
+    width: 110px;
+}
