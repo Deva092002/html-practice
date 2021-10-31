@@ -1,187 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Backtracking</title>
-    <!-- <style>
-        label{
-            color: red;
-        }
-    </style> -->
-    <!-- <styl>
-        body{
-            background-color: rgb(6, 124, 124);
-        }
-        label{
-           font-size: 20px;
-        }
-    </style> -->
-    <link rel="stylesheet" href="index.css">
-</head>
+    <link rel="stylesheet" href="index.css" />
+  </head>
 
-<body>
-    <h1>Backtracking</h1>
-    <h2 class="H2">Go To My</h2>
-    <a class="H1" href="./website.html">New website</a>
-    <a class="H1" href="./prepbyte responsive website/website2.html">Responsive Website</a>
+  <body>
+      <h1>Creataed by : Devashsh Kunwar</h1>
+      <h3>B.TECH (CSE) 193019</h3>
+    
+      <h1 class="Head">Link To all my Websites</h1>
+      <h2>Go To My :-</h2>
+    
+    <div class="container">
+
+      <a class="H1" href="./backtracking.html">
+        <h3>Backtracking</h3>
+        <img src="./img-1.jpeg" alt="" />
+        <p>This is a backtracking file i created using HTML</p>
+      </a>
+
+      <a class="H1" href="./website.html">
+        <h3>New website</h3>
+        <img src="./img-2.jpeg" alt="" />
+        <p>This is a website i created using HTML and CSS</p>
+      </a>
+      
+      <a class="H1" href="./prepbyte responsive website/website2.html">
+        <h3>Responsive Website</h3>
+        <img src="./img-3.jpeg" alt="" />
+        <p>This is my first responsive website using HTML and CSS</p>
+      </a>
+      <a class="H1" href="./albumGrid.html">
+        <h3>Nesting Grid with album layout</h3>
+        <img src="./img-4.jpeg" alt="" />
+        <p>This is a website i created using HTML and CSS</p>
+      </a>
+    </div>
+    <br/>
+    
+    <h2>Practice Website</h2>
+    <div class="container2">
+      <a class="H1 three" href="./bootstrap.html">Bootstrap</a>
+      <a class="H1" href="./form.html">HTML Form</a>
+      <a class="H1" href="./GridMDN.html">Extra Grid</a>
+      <a class="H1" href="./grid1.html">Grid</a>
+      <a class="H1" href="./gridProp.html">New Grid</a>
+      <a class="H1" href="./test.html">Test</a>
+      <a class="H1" href="./animation.html">Animation</a>
+    </div>
+
     <!-- <a href="./website.css">Go to website</a> -->
-
-    <p>Copyright ©2002 by Devashish Kunwar</p>
-    <p>Backtracking is a form of recursion.</p>
-    <p>The usual scenario is that you are faced with a number of options, and you must choose one of these. After you
-        make your choice you will get a new set of options; just what set of options you get depends on what choice you
-        made. This procedure is repeated over and over until you reach a final state. If you made a good sequence of
-        choices, your final state is a goal state; if you didn't, it isn't.
-    </p>
-    <p> Conceptually,start at the root of a tree; the tree probably has some good leaves and some bad leaves, though it
-        may be that the leaves are all good or all bad. You want to get to a good leaf. At each node, beginning with the
-        root, you choose one of its children to move to, and you keep this up until you get to a leaf.
-    </p>
-    <p>
-        Suppose you get to a bad leaf. You can backtrack to continue the search for a good leaf by revoking your most
-        recent choice, and trying out the next option in that set of options. If you run out of options, revoke the
-        choice that got you here, and try another choice at that node. If you end up at the root with no options left,
-        there are no good leaves to be found.
-    </p>
-    <img src="https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif" alt="">
-    <hr>
-    <ol>
-        <li>Starting at Root, your options are A and B. You choose A.</li>
-        <li>At A, your options are C and D. You choose C.</li>
-        <li>At A, you have already tried C, and it failed. Try D.</li>
-    </ol>
-    <table border="2px" align="center">
-        <thead>
-            <tr>
-                <th></th>
-                <th>2 by 3 map</th>
-                <th>3 by 3 map</th>
-                <th>3 by 4 map</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>Method:1</td>
-                <td>60ms</td>
-                <td>90ms</td>
-                <td>100ms</td>
-            </tr>
-            <tr>
-                <td>Method:2</td>
-                <td>60ms</td>
-                <td>90ms</td>
-                <td>100ms</td>
-            </tr>
-            <tr>
-                <td>Method:3</td>
-                <td>60ms</td>
-                <td>90ms</td>
-                <td>100ms</td>
-            </tr>
-        </tbody>
-    </table>
-    <br>
-    <table border="1px" align="center">
-        <thead>
-            <tr>
-                <th rowspan="2">Heading1</th>
-                <th>Heading2</th>
-                <th rowspan="2">Heading3</th>
-            </tr>
-            <tr>
-                <th>Subhead2</th>
-            </tr>
-        </thead>
-    </table>
-    <div class="pre">
-
-        <pre>
-        boolean solve(Node  n){
-            if n is a leaf node{
-                if the leaf is a goal node, return true
-                else return false
-            }else{
-                for each child c of n{
-                    if solve(c) succeeds,retun true
-                }
-                return false
-            }
-        }
-            int main(){
-              int a;
-              int b;
-              int sum = a+b;
-      }
-  </pre>
-    </div>
-    <a  class ="Link" href="https://www.prepbytes.com/">Go to prepbytes</a>
-    <br>
-    <br>
-
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/Ul_EM2xL_i4" title="YouTube video player"
-        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen></iframe>
-    <hr>
-    <form>
-        <fieldset>
-            <legend>Login Form</legend>
-            <div class="sure">
-                <label id="usernamelabel">User Name</label>
-                <br>
-                <input type="text" id="username" value="SAITM">
-                <br>
-                <label id="password2">Password</label>
-                <br>
-                <input type="text" value="Bydefault password" id="username">
-
-                <br>
-                <label>Are you sure</label>
-                <input type="checkbox">
-                <br>
-                <input type="button" value="submit">
-            </div>
-        </fieldset>
-    </form>
-    <hr>
-    <label style="color: rgb(199 179 9);">
-        <h1>Design</h1>
-    </label>
-    <img src="images.jpg" alt="">
-    <div class="div1">This is div 1</div>
-    <div class="para">
-        <p style="background-color: orangered;">This is para</p>
-    </div>
-    <div class="div1">This is div 2</div>
-
-    <div class="tag">
-        ptag
-    </div>
-    <div class="sure">
-
-        <input type="text">
-        <br>
-        <input type="text">
-        <br>
-        <textarea>test</textarea>
-    </div>
-
-    <span style="background-color: red;">This is span 1</span>
-    <span style="background-color: green;">This is span 1</span>
-
-    <h1 style="background-color: tomato;">This is h1</h1>
-
-    <button class="btn">Button1</button>
-    <button class="btn">Button2</button>
-    <p style="border: 2px solid black;">Sample</p>
-    <!-- <div class="name">Div 1 with some data</div> -->
-
-
-    <div class="name2">
-        <h1>Here we will discuss the image</h1>
-    </div>
-</body>
-
+  </body>
 </html>

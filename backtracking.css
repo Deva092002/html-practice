@@ -1,0 +1,110 @@
+/* body{
+    background-color: aqua;
+} */
+h1{
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+}
+    p{
+    font-size: 15px;   
+    margin: 30px 30px 30px 30px;
+}
+.para p{
+    padding: 10px;
+}
+.pre{
+    font-size: 15px;
+}
+a{
+    font-size: 25px;
+    color: black;
+}
+.sure{
+    font-style: italic;
+}
+label{
+    font-size: 20px;
+    font-weight: bold;
+}
+.div1{
+   background-color: orangered;
+   margin: 30px 30px 30px 30px;
+   font-size: 20px;
+   font-weight: bold;
+   padding: 10px;
+}
+.name{
+    border: 3px solid black;
+}
+.btn{
+    border: 2px solid yellow;
+    border-radius: 4px;
+    background-color: yellowgreen;
+}
+.name2{
+border: 2px solid black;
+height: 200px;
+background-image: url("https://www.cis.upenn.edu/~matuszek/cit594-2012/Pages/backtracking_files/treesearch.gif");
+background-repeat: no-repeat;
+}
+.image{
+    border: 2px solid rgb(0 0 0);
+    height: 208px;
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: auto;
+}
+#password2{
+    text-decoration-line: line-through;
+    text-decoration-color: rgb(180, 4, 4);
+}
+.tag{
+    height: 300px;
+    background-color: rgb(64 224 208);
+    width: 266px;
+    margin: 40px 80px 80px 80px;
+    border-radius: 9px;
+    background-image: linear-gradient(
+45deg, rgb(0 0 0), rgb(0 0 0 / 0%));
+}
+img{
+    padding: 30px;
+    background-color: grey;
+    margin-left: 38%;
+}
+.H1{
+    color: rgb(255 255 255);
+    background-color: rgb(148 152 239);
+    border: 2px solid rgb(30 21 21);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 5px;
+    height: 200px;
+    width: 300px;
+}
+.H1:hover{
+    color: black;
+    background-color: gray;
+    border: 2px solid rgb(30 21 21);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+}
+.H2{
+    color: rgb(255 255 255);
+    background-color: rgb(148 152 239);
+    border: 2px solid rgb(30 21 21);
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 5px;
+    width: 110px;
+}
+.Link{
+    color: rgb(255 255 255);
+    background-color: rgb(148 152 239);
+    border: 2px solid rgb(30 21 21);
+    text-decoration: none;
+    border-radius: 8px;
+    padding: 5px;
+    width: 110px;
+}

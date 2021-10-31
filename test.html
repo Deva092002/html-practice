@@ -1,0 +1,50 @@
+<head>
+    <title></title>
+</head>
+<style>
+    .container{
+        display: flex;
+    }
+    .grid-container div{
+        height: 50px;
+        width: 500px;
+        visibility: visible;
+    }
+    .grid-container1{
+        /* position: absolute; */
+        top: 500;
+        left: 100;
+        right: 300;
+    }
+    .grid-container2{
+        position: absolute;
+        top: 400;
+        left: 300;
+        right: 100;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item1" style="background-color: red;">Header</div>
+        <div class="item2" style="background-color: blue;">Menu</div>
+        <div class="item3" style="background-color: green;">Main</div>
+        <input type="text" value="">
+        <div style="display: none;" id="error-msg">Please fill the value</div>
+        <div class="item4" style="background-color: yellow;">Right</div>
+        <div class="item5" style="background-color: orange;">Footer</div>
+    </div>
+    <div class="grid-container1">
+        <div class="item1" style="background-color: orange;">Header</div>
+        <div class="item2" style="background-color: red;">Menu</div>
+        <div class="item3" style="background-color: green;">Main</div>
+        <div class="item4" style="background-color: yellow;">Right</div>
+        <div class="item5" style="background-color: aqua;">Footer</div>
+    </div>
+    <div class="grid-container2">
+        <div class="item1" style="background-color: orange;">Header</div>
+        <div class="item2" style="background-color: red;">Menu</div>
+        <div class="item3" style="background-color: green;">Main</div>
+        <div class="item4" style="background-color: yellow;">Right</div>
+        <div class="item5" style="background-color: aqua;">Footer</div>
+    </div>
+</body>

@@ -1,0 +1,126 @@
+<head>
+  <style>
+    @keyframes style1 {
+      from {
+        background-color: red;
+        /* margin-left: 100%; */
+      }
+      to {
+        background-color: violet;
+        width: 200px;
+        /* margin-right: 50%; */
+        height: 200px;
+      }
+    }
+    /* @keyframes style2{
+        from{
+            margin-left: 100%;
+            background-color: violet;
+        }
+        to{
+            margin-left: 0%;
+            background-color: yellowgreen;
+        }
+    } */
+    @keyframes example{
+        0%{
+           top: 0px;
+           left: 0px;
+           background-color: yellowgreen;
+        }
+        10%{
+          left: 200px;
+          top: 0px;
+          background-color: rgb(6, 114, 72);
+          border-radius: 9px;
+        }
+        20%{
+        left: 200px;
+        top: 200px;
+        background-color: turquoise;
+        }
+        30%{
+         left: 400px;
+         top: 200px;
+         background-color: red;
+         border-radius: 6px;
+        }
+        40%{
+          left: 400px;
+          top: 0px;
+          background-color: blue;
+        }
+        50%{
+          left: 600px;
+          top: 0px;
+          background-color: orange;
+          border-radius: 6px;
+        }
+        60%{
+          left: 600px;
+          top: 200px;
+          background-color: pink;
+        }
+        70%{
+          left: 800px;
+          top: 200px;
+          background-color: green;
+          border-radius: 6px;
+        }
+        80%{
+          left: 800px;
+          top: 0px;
+          background-color: gray;
+        }
+        90%{
+          left: 1000px;
+          top: 0px;
+          background-color: gold;
+          border-radius: 6px;
+        }
+        100%{
+          left: 1000px;
+          top: 200px;
+          background-color: fuchsia;
+        }
+    }
+    #animation {
+      /* width: 400px;
+      height: 400px;
+      background-color: yellow;
+      animation-name: style1; */
+      animation-duration: 5s;
+      animation-iteration-count: infinite;
+    }
+    #animation2 {
+        /* width: 200px;
+        animation-direction:reverse;
+      height: 200px;
+      position: relative;
+      background-color: yellow;
+      animation-name: style2; */
+      animation-duration: 4s;
+      animation-iteration-count: infinite;
+    }
+    #animation3{
+       height: 200px;
+       width: 200px;
+       position: relative;
+       animation-name: example;
+       animation-duration: 9s;
+       animation-iteration-count: infinite;
+    }
+  </style>
+</head>
+<body>
+  <div id="animation">
+    <p>Animation text</p>
+  </div>
+  <div id="animation2">
+      <p>Animation Text</p>
+  </div>
+  <!-- <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nobis cumque sit magni atque voluptatem, accusantium error fugiat.</p> -->
+  <div id="animation3">
+      <p>Text animation</p>
+  </div>
+</body>

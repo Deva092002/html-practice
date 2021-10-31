@@ -1,0 +1,45 @@
+<head>
+    <title>grid</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 20px;
+        grid-template-columns: repeat(5,minmax(2fr));
+        grid-template-rows: 200px;
+        grid-template-areas: 'a b c'
+                              'd e f';
+    }
+    .container div{
+        background-color: red;
+    }
+    .item-1{
+        grid-area: a;
+    }
+    .item-2{
+        grid-area: b;
+        grid-column: 2/4;
+    }
+    .item-3{
+        grid-area: c;
+    }
+    .item-4{
+        grid-area: d;
+    }
+    .item-5{
+        grid-area: e;
+    }
+    .item-6{
+        grid-area: f;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="item-1">Item-1</div>
+        <div class="item-2">Item-2</div>
+        <div class="item-3">Item-3</div>
+        <div class="item-4">Item-4</div>
+        <div class="item-5">Item-5</div>
+        <div class="item-6">Item-6</div>
+    </div>
+</body>
